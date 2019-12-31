@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\class-management",
+    "\\src\\app\\class-management\\forms",
+    "\\src\\app\\class-management\\lists",
+    "\\src\\app\\class-management\\models",
+    "\\src\\app\\class-management\\services"
+  ],
+  "SelectedNode": "\\src\\app\\class-management\\forms\\class-form.component.html",
+  "PreviewInSolutionExplorer": false
+}

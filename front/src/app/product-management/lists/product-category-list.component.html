@@ -1,0 +1,44 @@
+<div class="table-container">
+    <h2 class="my-4">Product category list</h2>
+
+    <mat-table [dataSource]="productCategories" class="mat-elevation-z4">
+        <!-- Position Column -->
+        <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="code">
+            <mat-header-cell *matHeaderCellDef> Code </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.code}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="productCount">
+            <mat-header-cell *matHeaderCellDef> Product count </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.productCount}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="lastUpdated">
+            <mat-header-cell *matHeaderCellDef> Last Updated </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.lastUpdated}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="actionButtons">
+            <mat-header-cell *matHeaderCellDef> Action Buttons </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <button routerLink="/category/{{element.id}}/products" class="mx-2" mat-raised-button>View</button>
+                <button routerLink="/category/{{element.id}}/products" class="mx-2" mat-raised-button color="primary">Edit</button>
+                <button class="mx-2" mat-raised-button color="warn">Delete</button>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: columnsToDisplay;"></mat-row>
+    </mat-table>
+    <button class="mt-3" routerLink="/category" mat-raised-button color="primary">New Product Catetory</button>
+</div>

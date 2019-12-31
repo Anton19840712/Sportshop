@@ -1,0 +1,14 @@
+.buttons
+{
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+.btn-group
+{
+  margin-right: 5px;
+}
+
+/* img{
+  width: 50px;
+} */

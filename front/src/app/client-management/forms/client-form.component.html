@@ -1,0 +1,49 @@
+<div class="container">
+    <h2>Client Editor</h2>
+    <form (ngSubmit)="onSubmit()" #clientForm="ngForm">
+        <div class="form-group" *ngIf='existed'>
+            <label for="idLabel">ID</label>
+            <input type="text" class="form-control" id="id" aria-describedby="idLabel" [(ngModel)]="client.sportNutritionClientID" name="id" #id="ngModel" readonly>
+        </div>
+        <div class="form-group">
+            <label for="name" id="nameLabel">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="nameLabel" minlength="1" maxlength="60" required [(ngModel)]="client.sportNutritionClientName" name="name" #name="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                <div *ngIf="name.errors.required">Client Name is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city" id="cityLabel">City</label>
+            <input type="text" class="form-control" id="city" aria-describedby="cityLabel" minlength="1" maxlength="60" required [(ngModel)]="client.sportNutritionClientCity" name="city" #city="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                <div *ngIf="name.errors.required">Client city is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gender" id="genderLabel">Gender</label>
+            <input type="text" class="form-control" id="gender" aria-describedby="genderLabel" minlength="1" maxlength="60" required [(ngModel)]="client.sportNutritionClientGender" name="gender" #gender="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                <div *ngIf="name.errors.required">Client gender is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age" id="ageLabel">Age</label>
+            <input type="text" class="form-control" id="age" aria-describedby="ageLabel" minlength="1" maxlength="60" required [(ngModel)]="client.sportNutritionClientAge" name="age" #age="ngModel">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                <div *ngIf="name.errors.required">Client age is required.</div>
+            </div>
+        </div>
+        <div class="btn-toolbar" role="toolbar" aria-label="Action buttons">
+            <div class="btn-group mr-1" role="group" aria-label="Cancel group">
+                <button type="button" class="btn btn-primary" (click)="onCancel()">Back</button>
+            </div>
+            <div class="btn-group mr-4" role="group" aria-label="Save group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="Delete group">
+                <button type="button" class="btn btn-warning" (click)="onDelete()">Delete</button>
+            </div>
+        </div>
+    </form>
+
+</div>
