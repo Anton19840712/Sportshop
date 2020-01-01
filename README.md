@@ -7,5 +7,5 @@
 - Angular 6
 - Automatical fillment of databases
 - Ability to save information from front in bytes
-- Corellation between front and back api
+- Correlation between front and back api
 - etc
