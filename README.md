@@ -9,5 +9,7 @@
 - Ability to save information from front in bytes
 - Correlation between front and back api
 - Swall and toastr notifications
-- Azure deployed resources: back - http://newservice24.azurewebsites.net/, front https://katla24sportdeliverytrans.azurewebsites.net/
+- Azure deployed resources: 
+- back - http://newservice24.azurewebsites.net/
+- front https://katla24sportdeliverytrans.azurewebsites.net/
 - etc
