@@ -8,4 +8,5 @@
 - Automatical fillment of databases
 - Ability to save information from front in bytes
 - Correlation between front and back api
+- Swall and toastr notifications
 - etc
