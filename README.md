@@ -10,6 +10,6 @@
 - Correlation between front and back api
 - Swall and toastr notifications
 - Azure deployed resources: 
-- back - http://newservice24.azurewebsites.net/
+- back http://newservice24.azurewebsites.net/
 - front https://katla24sportdeliverytrans.azurewebsites.net/
 - etc
