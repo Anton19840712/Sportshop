@@ -5,8 +5,8 @@
 - Services
 - Repository pattern
 - Angular 6
-- Automatical fillment of databases
-- Ability to save information from front in bytes
+- Automatical fillment of databases using Seed method, sql queries to fill azure databases
+- Ability to save information from front to back in bytes
 - Correlation between front and back api
 - Swall and toastr notifications
 - Azure deployed resources: 
