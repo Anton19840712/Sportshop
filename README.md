@@ -1,7 +1,7 @@
 ## Aspects used in application
 
 - Twitter-CRUD-like API
-- One-to-one, one-to-many relationships
+- Code-First approach: one-to-one, one-to-many relationships in a few instances
 - Services
 - Repository pattern
 - Angular 6
