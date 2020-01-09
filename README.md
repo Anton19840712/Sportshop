@@ -10,7 +10,4 @@
 - Correlation between front and back api
 - Swall and toastr notifications
 - Angular Material table for categeories instance to look better
-- Azure deployed resources: 
-- back http://newservice24.azurewebsites.net/
-- front https://katla24sportdeliverytrans.azurewebsites.net/
-- etc
+- Application was deployed in Azure
